@@ -3,6 +3,7 @@ import { APP_NAME } from "@/lib/constants";
 import { ShoppingCart, UserIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import ModeToggle from "./mode-toggle";
 
 
 const Header = () => {
@@ -18,6 +19,7 @@ const Header = () => {
                 </Link>
             </div>
             <div className="space-x-2">
+                <ModeToggle />
                 <Button asChild variant="ghost" >
                     <Link href="/cart">
                         <ShoppingCart /> Cart
